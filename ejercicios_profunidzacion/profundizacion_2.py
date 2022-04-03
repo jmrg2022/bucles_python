@@ -35,3 +35,31 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+while True:
+
+    numero_1 = int(input('Ingrese el primer número a operar:'))
+    numero_2 = int(input('Ingrese el último número a operar:'))
+    operacion = input('Ingrese la operación a realizar (+,-,*,/,**):')
+
+    if operacion == "+":
+        resultado = numero_1 + numero_2
+        print("Suma:",resultado)
+    elif operacion == "-":
+        resultado = numero_1 - numero_2
+        print("Resta:",resultado)
+    elif operacion == "*":
+        resultado = numero_1 * numero_2
+        print("Multiplicación:",resultado)
+    elif operacion == "/":
+        resultado = numero_1 / numero_2
+        print("División",resultado)
+    elif operacion == "**":
+        resultado = numero_1 ** numero_2
+        print("Potencia:",resultado)
+    elif operacion == "FIN":
+        break
+    else:
+        print("Caracter de Operador no permitido!!!")
+
+
