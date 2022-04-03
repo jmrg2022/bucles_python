@@ -16,11 +16,19 @@
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
 
-inicio = int(input('Ingrese el primer número de la secuencia\n'))
-fin = int(input('Ingrese el último número de la secuencia\n'))
+inicio = int(input('Ingrese el primer número de la secuencia:'))
+fin = int(input('Ingrese el último número de la secuencia:'))
+
 sumatoria = 0  # Inicializo el contador en 0
 
+
+
 # for ... in range(....)
+
+for x in range(inicio,fin+1):
+    sumatoria += x
+
+print("Sumatoria de número",inicio,"hasta",fin,"es igual a",sumatoria)
 
 # Imprimir el valor de la sumatoria
 
